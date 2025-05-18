@@ -1,2 +1,1 @@
-# modern-webhosting-agency
-A repository for a modern web hosting agency project
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
