@@ -39,4 +39,54 @@ apiClient.interceptors.response.use(
   }
 );
 
+// Authentication API functions
+export const login = async (email, password) => {
+  const response = await apiClient.post('/auth/login/', { email, password });
+  return response.data;
+};
+
+export const register = async (email, password) => {
+  const response = await apiClient.post('/auth/register/', { email, password });
+  return response.data;
+};
+
+// Hosting Plan API functions
+export const getHostingPlans = async () => {
+  const response = await apiClient.get('/hostingplans/');
+  return response.data;
+};
+
+export const getHostingPlan = async (id) => {
+  const response = await apiClient.get(`/hostingplans/${id}/`);
+  return response.data;
+};
+
+// Domain API functions
+export const getDomains = async () => {
+  const response = await apiClient.get('/domains/');
+  return response.data;
+};
+
+export const getDomain = async (id) => {
+  const response = await apiClient.get(`/domains/${id}/`);
+  return response.data;
+};
+
+// Testimonial API functions
+export const getTestimonials = async () => {
+  const response = await apiClient.get('/testimonials/');
+  return response.data;
+};
+
+export const getTestimonial = async (id) => {
+  const response = await apiClient.get(`/testimonials/${id}/`);
+  return response.data;
+};
+
+// Contact API functions
+export const createContact = async (name, email, subject, message) => {
+  const response = await apiClient.post('/contact/', { name, email, subject, message });
+  return response.data;
+};
+
 export default apiClient;
