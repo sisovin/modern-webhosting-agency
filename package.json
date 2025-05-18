@@ -1,0 +1,21 @@
+{
+  "name": "modern-webhosting-agency",
+  "version": "1.0.0",
+  "description": "A modern web hosting agency project",
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "build": "pnpm --filter frontend build",
+    "start": "pnpm --filter frontend start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest",
+    "django": "latest",
+    "djangorestframework": "latest",
+    "psycopg2-binary": "latest"
+  }
+}
