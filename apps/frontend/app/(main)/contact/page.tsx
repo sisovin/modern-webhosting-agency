@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import apiClient from '../../../lib/api';
 import ContactForm from '../../components/ContactForm';
 
 const ContactPage = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await apiClient.post('/contact/', { name, email, subject, message });
+      setSuccess('Your message has been sent successfully.');
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    } catch (err) {
+      setError('Failed to send your message. Please try again.');
+    }
+  };
+
   return (
     <div className="container mx-auto px-4">
       <header className="py-5">
@@ -22,7 +44,19 @@ const ContactPage = () => {
             <li>Address: 123 Web Hosting Lane, Suite 100, Web City, WC 12345</li>
           </ul>
         </section>
-        <ContactForm />
+        <ContactForm
+          name={name}
+          setName={setName}
+          email={email}
+          setEmail={setEmail}
+          subject={subject}
+          setSubject={setSubject}
+          message={message}
+          setMessage={setMessage}
+          handleSubmit={handleSubmit}
+          error={error}
+          success={success}
+        />
         <section>
           <h2 className="text-2xl font-semibold">Follow Us</h2>
           <p className="mt-4">
