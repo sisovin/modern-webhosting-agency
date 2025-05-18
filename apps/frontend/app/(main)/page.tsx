@@ -1,4 +1,9 @@
 import React from 'react';
+import Banner from '../../components/Banner';
+import Features from '../../components/Features';
+import DomainSearch from '../../components/DomainSearch';
+import Pricing from '../../components/Pricing';
+import Counter from '../../components/Counter';
 
 const HomePage = () => {
   return (
@@ -7,6 +12,11 @@ const HomePage = () => {
         <h1 className="text-4xl font-bold text-center">Welcome to Modern Webhosting Agency</h1>
       </header>
       <main className="my-10">
+        <Banner />
+        <Features />
+        <DomainSearch />
+        <Pricing />
+        <Counter />
         <section className="mb-10">
           <h2 className="text-2xl font-semibold">Our Services</h2>
           <p className="mt-4">

@@ -1,4 +1,6 @@
 import React from 'react';
+import HostingPlans from '../../components/HostingPlans';
+import ComparisonTable from '../../components/ComparisonTable';
 
 const HostingPlansPage = () => {
   return (
@@ -31,6 +33,8 @@ const HostingPlansPage = () => {
             Our dedicated servers provide the ultimate in performance and security. Ideal for large websites and applications with high traffic.
           </p>
         </section>
+        <HostingPlans />
+        <ComparisonTable />
         <section>
           <h2 className="text-2xl font-semibold">Contact Us</h2>
           <p className="mt-4">

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from '../../components/ContactForm';
 
 const ContactPage = () => {
   return (
@@ -21,6 +22,7 @@ const ContactPage = () => {
             <li>Address: 123 Web Hosting Lane, Suite 100, Web City, WC 12345</li>
           </ul>
         </section>
+        <ContactForm />
         <section>
           <h2 className="text-2xl font-semibold">Follow Us</h2>
           <p className="mt-4">

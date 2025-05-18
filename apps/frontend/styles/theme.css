@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #1DA1F2;
+  --secondary-color: #14171A;
+  --accent-color: #657786;
+  --background-color: #F5F8FA;
+  --surface-color: #FFFFFF;
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-serif: 'Merriweather', serif;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-light: 300;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease-in-out;
+}
