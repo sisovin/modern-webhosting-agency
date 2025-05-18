@@ -1,4 +1,6 @@
 import React from 'react';
+import AboutHero from '../../components/AboutHero';
+import Team from '../../components/Team';
 
 const AboutPage = () => {
   return (
@@ -7,6 +9,8 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold text-center">About Us</h1>
       </header>
       <main className="my-10">
+        <AboutHero />
+        <Team />
         <section className="mb-10">
           <h2 className="text-2xl font-semibold">Our Mission</h2>
           <p className="mt-4">

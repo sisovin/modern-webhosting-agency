@@ -1,4 +1,5 @@
 import React from 'react';
+import TestimonialCarousel from '../../components/TestimonialCarousel';
 
 const TestimonialPage = () => {
   return (
@@ -30,6 +31,7 @@ const TestimonialPage = () => {
             </div>
           </div>
         </section>
+        <TestimonialCarousel />
         <section>
           <h2 className="text-2xl font-semibold">Share Your Experience</h2>
           <p className="mt-4">

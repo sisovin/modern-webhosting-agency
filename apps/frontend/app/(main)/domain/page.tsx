@@ -1,4 +1,5 @@
 import React from 'react';
+import DomainPricing from '../../components/DomainPricing';
 
 const DomainRegistrationPage = () => {
   return (
@@ -22,6 +23,7 @@ const DomainRegistrationPage = () => {
             <li>Free domain privacy protection</li>
           </ul>
         </section>
+        <DomainPricing />
         <section>
           <h2 className="text-2xl font-semibold">Contact Us</h2>
           <p className="mt-4">
