@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import apiClient from '../../../lib/api';
+"use client";
 
-const RegisterPage = () => {
-  const [email, setEmail] = useState('');
+import React, { useState } from 'react';
+import apiClient from '@/lib/api';
+
+const RegisterPage = () => {  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       setError('Passwords do not match');

@@ -1,6 +1,6 @@
 import React from 'react';
-import HostingPlans from '../../components/HostingPlans';
-import ComparisonTable from '../../components/ComparisonTable';
+import HostingPlans from '@/components/HostingPlans';
+import ComparisonTable from '@/components/ComparisonTable';
 
 const HostingPlansPage = () => {
   return (

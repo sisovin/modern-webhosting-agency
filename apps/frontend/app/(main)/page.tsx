@@ -1,9 +1,11 @@
+"use client";
+
 import React from 'react';
-import Banner from '../../components/Banner';
-import Features from '../../components/Features';
-import DomainSearch from '../../components/DomainSearch';
-import Pricing from '../../components/Pricing';
-import Counter from '../../components/Counter';
+import Banner from '@/components/Banner';
+import Features from '@/components/Features';
+import DomainSearch from '@/components/DomainSearch';
+import Pricing from '@/components/Pricing';
+import Counter from '@/components/Counter';
 
 const HomePage = () => {
   return (

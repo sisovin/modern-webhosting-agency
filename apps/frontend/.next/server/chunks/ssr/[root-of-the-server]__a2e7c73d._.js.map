@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///D:/DownloadProjects/modern-webhosting-agency/apps/frontend/components/theme-provider.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport * as React from \"react\"\r\nimport { ThemeProvider as NextThemesProvider, type Attribute } from \"next-themes\"\r\n\r\n// Define the ThemeProviderProps type directly instead of importing it\r\ntype ThemeProviderProps = {\r\n  children: React.ReactNode\r\n  defaultTheme?: string\r\n  storageKey?: string\r\n  themes?: string[]\r\n  forcedTheme?: string\r\n  enableSystem?: boolean\r\n  enableColorScheme?: boolean\r\n  disableTransitionOnChange?: boolean\r\n  attribute?: Attribute | Attribute[]\r\n}\r\n\r\nexport function ThemeProvider({ children, ...props }: ThemeProviderProps) {\r\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>\r\n}\r\n"],"names":[],"mappings":";;;;AAGA;AAHA;;;AAkBO,SAAS,cAAc,EAAE,QAAQ,EAAE,GAAG,OAA2B;IACtE,qBAAO,8OAAC,gJAAA,CAAA,gBAAkB;QAAE,GAAG,KAAK;kBAAG;;;;;;AACzC","debugId":null}}]
+}

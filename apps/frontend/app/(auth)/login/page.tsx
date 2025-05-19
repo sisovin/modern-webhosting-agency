@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import apiClient from '../../../lib/api';
+"use client";
 
-const LoginPage = () => {
-  const [email, setEmail] = useState('');
+import React, { useState } from 'react';
+import apiClient from '@/lib/api';
+
+const LoginPage = () => {  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await apiClient.post('/auth/login/', { email, password });

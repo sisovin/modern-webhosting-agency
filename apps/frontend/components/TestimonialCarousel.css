@@ -1,0 +1,10 @@
+.testimonial-slider {
+    display: flex;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+}

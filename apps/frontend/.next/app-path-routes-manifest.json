@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/(auth)/login/page": "/login",
+  "/(auth)/register/page": "/register",
+  "/(main)/about/page": "/about",
+  "/(main)/contact/page": "/contact",
+  "/(main)/page": "/",
+  "/(main)/domain/page": "/domain",
+  "/(main)/hosting/page": "/hosting",
+  "/(main)/comparison/page": "/comparison",
+  "/(main)/testimonial/page": "/testimonial",
+  "/(main)/team/page": "/team"
+}

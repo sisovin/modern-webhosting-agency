@@ -1,40 +1,33 @@
 import React from 'react';
-import AboutHero from '../../components/AboutHero';
-import Team from '../../components/Team';
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4">
-      <header className="py-5">
-        <h1 className="text-4xl font-bold text-center">About Us</h1>
-      </header>
-      <main className="my-10">
-        <AboutHero />
-        <Team />
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold">Our Mission</h2>
-          <p className="mt-4">
-            At Modern Webhosting Agency, our mission is to provide reliable and secure web hosting services to businesses and individuals around the world. We strive to offer the best customer support and the most affordable pricing in the industry.
-          </p>
-        </section>
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold">Our Team</h2>
-          <p className="mt-4">
-            Our team is composed of experienced professionals who are passionate about web hosting and dedicated to helping our customers succeed online. We work tirelessly to ensure that our services are always up-to-date and meet the highest standards of quality.
-          </p>
-        </section>
-        <section>
-          <h2 className="text-2xl font-semibold">Contact Us</h2>
-          <p className="mt-4">
-            If you have any questions or need assistance, please feel free to contact us at support@modernwebhosting.com.
-          </p>
-        </section>
-      </main>
-      <footer className="py-5 text-center">
-        <p>&copy; {new Date().getFullYear()} Modern Webhosting Agency. All rights reserved.</p>
-      </footer>
+    <div className="container mx-auto px-4 py-10">
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">About Us</h1>
+      
+      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Our Story</h2>
+        <p className="mb-4 text-gray-700 dark:text-gray-300">
+          Founded in 2015, Modern Webhosting Agency has been providing top-notch web hosting solutions to businesses of all sizes around the world.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          With a focus on reliability, security, and excellent customer service, we've grown to become one of the most trusted names in the industry.
+        </p>
+      </div>
+      
+      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Our Mission</h2>
+        <p className="text-gray-700 dark:text-gray-300">
+          At Modern Webhosting Agency, our mission is to provide reliable and secure web hosting services to businesses and individuals around the world. We strive to offer the best customer support and the most affordable pricing in the industry.
+        </p>
+      </div>
+      
+      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Our Team</h2>
+        <p className="text-gray-700 dark:text-gray-300">
+          Our team is composed of experienced professionals who are passionate about web hosting and dedicated to helping our customers succeed online. We work tirelessly to ensure that our services are always up-to-date and meet the highest standards of quality.
+        </p>
+      </div>
     </div>
   );
-};
-
-export default AboutPage;
+}

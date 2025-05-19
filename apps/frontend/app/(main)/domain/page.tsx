@@ -1,5 +1,5 @@
 import React from 'react';
-import DomainPricing from '../../components/DomainPricing';
+import DomainPricing from '@/components/DomainPricing';
 
 const DomainRegistrationPage = () => {
   return (
